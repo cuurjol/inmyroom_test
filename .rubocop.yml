@@ -59,6 +59,8 @@ Metrics/BlockLength:
     - 'db/schema.rb'
     - 'config/environments/development.rb'
     - 'db/seeds.rb'
+    - 'spec/services/products/sell_out_service_spec.rb'
+    - 'spec/services/products/transfer_service_spec.rb'
 
 Style/ExpandPathArguments:
   Exclude:
