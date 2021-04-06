@@ -39,7 +39,7 @@ describe Products::TransferService do
       it 'returns a hash with error message' do
         result = service.call
         expect(result[:params]).to eq(params)
-        expect(result[:old_product]).to eq(product)
+        expect(result[:old_product]).to be_nil
         expect(result[:new_product]).to be_nil
         expect(result[:success]).to be_falsey
         expect(result[:error]).to eq("Couldn't find Warehouse with 'id'=-1")
